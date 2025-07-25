@@ -13,7 +13,7 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
-public class BaseTest {
+public class BaseWebTest {
     public static final WebConfig webConfig = WebProvider.getWebConfig();
 
     @BeforeAll
