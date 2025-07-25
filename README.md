@@ -1,9 +1,9 @@
-# Автотесты для сайта CrowdTesting
+# Проект по автоматизации тестирования сайта "4 лапы"
 <p align="center">
-<img title="CrowdTesting" src="media/screens/CT.png">
+<img title="4lapy" src="media/screens/CT.png">
 </p>
 
-[Сайт CrowdTesting](https://crowdtesting.ru/)
+[Сайт "4 лапы"](https://4lapy.ru/)
 
 ## :pushpin: Содержание:
 
