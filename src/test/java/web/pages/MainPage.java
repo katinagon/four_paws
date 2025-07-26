@@ -12,6 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPage {
     private final SelenideElement profileIcon = $("#nav_menu_profile"),
+            activeProfileIcon = $(".NavIcon_isActive__YBRWm #nav_menu_profile"),
             btnLoginByEmail = $("#id_login_by_email"),
             inputLoginEmail = $("#id_login_email_input"),
             btnContinueLogin = $("#id_login_continue_button"),
@@ -58,7 +59,7 @@ public class MainPage {
 
     @Step("Проверка сайдбара у авторизованного пользователя")
     public MainPage checkSidebarForAuthorizedUser() {
-        profileIcon.shouldBe(visible, Duration.ofSeconds(10)).click();
+        activeProfileIcon.shouldBe(visible, Duration.ofSeconds(10)).click();
         userSidebar.shouldBe(visible);
         return this;
     }
