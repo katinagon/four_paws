@@ -57,7 +57,7 @@ public class MainPage {
 
     @Step("Проверка сайдбара у авторизованного пользователя")
     public MainPage checkSidebarForAuthorizedUser() {
-        $x("//div[text()='профиль']").click();
+        $$("ul.UserSidebar_buttonsList__9vlVl li").last().shouldBe(visible).click();
         //activeProfileIcon.shouldBe(visible, Duration.ofSeconds(10)).click();
         userSidebar.shouldBe(visible);
         return this;
