@@ -7,7 +7,7 @@ import api.requests.HelpersRequests;
 
 import static helpers.TestData.*;
 
-public class LoginExtension {
+public class HelperAPI {
 
     public void getToken() {
         AuthResponseModel response = HelpersRequests.getTokenRequest();

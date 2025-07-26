@@ -1,6 +1,6 @@
 package api.tests;
 
-import api.BaseApiTest;
+import api.ApiTestBase;
 import api.models.CartItem;
 import api.models.ItemsRequestModel;
 import io.qameta.allure.Feature;
@@ -19,7 +19,7 @@ import static helpers.TestData.*;
 @Owner("goncharova-ek")
 @Tag("items-api")
 @DisplayName("Товары API")
-public class ItemsTests extends BaseApiTest {
+public class ItemsTests extends ApiTestBase {
 
     @Feature("Товары")
     @Story("Добавление товара")

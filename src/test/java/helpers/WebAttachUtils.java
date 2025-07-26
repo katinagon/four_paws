@@ -12,9 +12,9 @@ import java.nio.charset.StandardCharsets;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
-import static web.BaseWebTest.webConfig;
+import static web.WebTestBase.webConfig;
 
-public class Attach {
+public class WebAttachUtils {
     private static final String SELENOID_URL = getSelenoidUrl();
 
     private static String getSelenoidUrl() {

@@ -5,19 +5,22 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
-import web.BaseWebTest;
+import web.WebTestBase;
 import web.pages.MainPage;
 
 import static helpers.TestData.*;
 
 @Owner("goncharova-ek")
-@Tag("main_page")
-@DisplayName("Тесты главной страницы сайта")
-public class MainPageTests extends BaseWebTest {
+@Tags({
+        @Tag("authorization"),
+        @Tag("authorization-web")
+})
+@DisplayName("Авторизация пользователя WEB")
+public class AuthorizationTests extends WebTestBase {
     MainPage mainPage = new MainPage();
 
-    @Tag("authorization")
     @Feature("Авторизация пользователя")
     @Story("Успешная авторизация")
     @DisplayName("Успешная авторизация через почту")
@@ -30,7 +33,6 @@ public class MainPageTests extends BaseWebTest {
                 .checkSidebarForAuthorizedUser();
     }
 
-    @Tag("authorization")
     @Feature("Авторизация пользователя")
     @Story("Неуспешная авторизация")
     @DisplayName("Неуспешная авторизация с пустой почтой")
@@ -42,7 +44,6 @@ public class MainPageTests extends BaseWebTest {
                 .checkErrorTextWhenEmptyField();
     }
 
-    @Tag("authorization")
     @Feature("Авторизация пользователя")
     @Story("Неуспешная авторизация")
     @DisplayName("Неуспешная авторизация с неверной/незарегистрированной почтой")
@@ -54,7 +55,6 @@ public class MainPageTests extends BaseWebTest {
                 .checkEmailErrorText();
     }
 
-    @Tag("authorization")
     @Feature("Авторизация пользователя")
     @Story("Неуспешная авторизация")
     @DisplayName("Неуспешная авторизация с пустым паролем")
@@ -67,7 +67,6 @@ public class MainPageTests extends BaseWebTest {
                 .checkErrorTextWhenEmptyField();
     }
 
-    @Tag("authorization")
     @Feature("Авторизация пользователя")
     @Story("Неуспешная авторизация")
     @DisplayName("Неуспешная авторизация с неверным паролем")
@@ -80,7 +79,6 @@ public class MainPageTests extends BaseWebTest {
                 .checkPopupIncorrectPassword();
     }
 
-    @Tag("authorization")
     @Feature("Авторизация пользователя")
     @Story("Неуспешная авторизация")
     @DisplayName("Неуспешная авторизация с пустым номером телефона")
@@ -92,7 +90,6 @@ public class MainPageTests extends BaseWebTest {
                 .checkErrorTextWhenEmptyField();
     }
 
-    @Tag("authorization")
     @Feature("Авторизация пользователя")
     @Story("Неуспешная авторизация")
     @DisplayName("Неуспешная авторизация с номером телефона из 1-ой добавленной цифры")
@@ -104,7 +101,6 @@ public class MainPageTests extends BaseWebTest {
                 .checkErrorTextWhenIncorrectPhoneNumber();
     }
 
-    @Tag("authorization")
     @Feature("Авторизация пользователя")
     @Story("Неуспешная авторизация")
     @DisplayName("Неуспешная авторизация с номером телефона из 9-ти добавленных цифр")

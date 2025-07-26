@@ -1,6 +1,6 @@
 package api.tests;
 
-import api.BaseApiTest;
+import api.ApiTestBase;
 import api.models.LoginDataModel;
 import api.models.LoginEmailRequestModel;
 import io.qameta.allure.Feature;
@@ -15,9 +15,12 @@ import static config.BaseConfig.baseURI;
 import static helpers.TestData.*;
 
 @Owner("goncharova-ek")
-@Tag("authorization-api")
-@DisplayName("Авторизация пользователя")
-public class AuthorizationTests extends BaseApiTest {
+@Tags({
+        @Tag("authorization"),
+        @Tag("authorization-api")
+})
+@DisplayName("Авторизация пользователя API")
+public class AuthorizationTests extends ApiTestBase {
 
     @BeforeAll
     public static void setBaseURI() {
