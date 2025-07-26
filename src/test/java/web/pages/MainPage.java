@@ -3,6 +3,8 @@ package web.pages;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -28,7 +30,7 @@ public class MainPage {
 
     @Step("Открываем поп-ап регистрации/авторизации")
     public MainPage openAuthorizationPopUp() {
-        profileIcon.click();
+        profileIcon.shouldBe(visible, Duration.ofSeconds(10)).click();
         return this;
     }
 
