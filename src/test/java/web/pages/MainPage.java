@@ -58,7 +58,7 @@ public class MainPage {
 
     @Step("Проверка сайдбара у авторизованного пользователя")
     public MainPage checkSidebarForAuthorizedUser() {
-        profileIcon.click();
+        profileIcon.shouldBe(visible, Duration.ofSeconds(10)).click();
         userSidebar.shouldBe(visible);
         return this;
     }
