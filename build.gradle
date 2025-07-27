@@ -27,8 +27,7 @@ def selenideVersion = "7.5.1", //7.5.1
     junitVersion = "5.9.3",
     allureVersion = "2.21.0",
     ownerVersion = "1.0.12",
-    slf4jVersion = "2.0.7",
-    appiumVersion = "9.2.2"
+    slf4jVersion = "2.0.7"
 
 dependencies {
     testImplementation(
@@ -39,8 +38,7 @@ dependencies {
             "io.qameta.allure:allure-rest-assured:$allureVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.slf4j:slf4j-simple:$slf4jVersion",
-            "org.aeonbits.owner:owner:$ownerVersion",
-            "io.appium:java-client:$appiumVersion"
+            "org.aeonbits.owner:owner:$ownerVersion"
     )
 }
 
