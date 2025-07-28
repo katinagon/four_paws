@@ -31,9 +31,9 @@
 <code><a href="https://github.com/"><img width="5%" title="GitHub" src="media/icons/GitHub.svg"></a></code>
 <code><a href="https://www.jenkins.io/"><img width="5%" title="Jenkins" src="media/icons/Jenkins.svg"></a></code>
 <code><a href="https://github.com/allure-framework/allure2"><img width="5%" title="Allure Report" src="media/icons/Allure_Report.svg"></a></code>
-<code><a href="https://qameta.io/"><img width="4%" title="Allure TestOps" src="media/icons/AllureTestOps.svg"></a></code>
+<code><a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/icons/AllureTestOps.svg"></a></code>
 <code><a href="https://web.telegram.org/"><img width="5%" title="Telegram" src="media/icons/Telegram.svg"></a></code>
-<code><a href="https://www.atlassian.com/software/jira"><img width="4%" title="Jira" src="media/icons/Jira.svg"></a></code>
+<code><a href="https://www.atlassian.com/software/jira"><img width="5%" title="Jira" src="media/icons/Jira.svg"></a></code>
 </p>
 
 Автотесты написаны на `Java` с использованием фреймворка `Selenide`.\
