@@ -88,7 +88,7 @@ clean ${TASK}
 ### *Параметры сборки:*
 
 * <code>TASK</code> – задача для запуска.
-* <code>SELENOID_URL, SELENOID_LOGIN, SELENOID_PASSWORD</code> - необходимы для для удаленного запуска браузера.
+* <code>SELENOID_URL</code>, <code>SELENOID_LOGIN</code>, <code>SELENOID_PASSWORD</code> - необходимы для для удаленного запуска браузера.
 * <code>BROWSER</code> - браузер, в котором будут выполняться тесты.
 * <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты.
 * <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты.
