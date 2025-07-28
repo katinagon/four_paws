@@ -31,7 +31,7 @@
 <a href="https://github.com/"><img width="6%" title="GitHub" src="media/icons/GitHub.svg"></a>
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="media/icons/Jenkins.svg"></a>
 <a href="https://github.com/allure-framework/allure2"><img width="6%" title="Allure Report" src="media/icons/Allure_Report.svg"></a>
-<a href="https://qameta.io/"><img width="6%" title="Allure TestOps" src="media/icons/Allure_TestOps.svg"></a>
+<a href="https://qameta.io/"><img width="6%" title="Allure TestOps" src="media/icons/AllureTestOps.svg"></a>
 <a href="https://web.telegram.org/"><img width="6%" title="Telegram" src="media/icons/Telegram.svg"></a>
 <a href="https://www.atlassian.com/software/jira"><img width="6%" title="Jira" src="media/icons/Jira.svg"></a>
 </p>
