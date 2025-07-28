@@ -1,8 +1,11 @@
 # Проект по автоматизации тестирования сайта "4 лапы"
 <p align="center">
-<img title="4lapy" src="media/screens/CT.png">
+<img title="4lapy" src="media/screens/4lapy.png">
 </p>
 
+«Четыре Лапы» — одна из крупнейших сетей зоомагазинов и сервисов для заботы о питомцах в России. 
+retailtech.ru
+Сеть охватывает широкую сферу товаров и услуг: от покупки премиальных кормов до передержки и ветеринарных услуг. 
 [Сайт "4 лапы"](https://4lapy.ru/)
 
 ## :pushpin: Содержание:
@@ -101,13 +104,13 @@ ${TASK}
 ### *Основная страница отчёта*
 
 <p align="center">
-<img title="Allure Overview" src="media/screens/Allure_Report.png">
+<img title="Allure Overview" src="media/screens/AllureReport.png">
 </p>
 
 ### *Тест-кейсы*
 
 <p align="center">
-<img title="Suites" src="media/screens/Suites.png">
+<img title="Suites" src="media/screens/TestCase.png">
 </p>
 
 ### *Графики*
@@ -121,13 +124,13 @@ ${TASK}
 После завершения сборки бот в <code>Telegram</code> автоматически обрабатывает и отправляет сообщение с результатом.
 
 <p align="center">
-<img width="70%" title="Telegram bot" src="media/screens/TG_bot.png">
+<img width="70%" title="Telegram bot" src="media/screens/Telegram.png">
 </p>
 
 ## :clapper: Видео примера запуска тестов в Selenoid
 
 К каждому тесту в отчете прилагается видео прогона.
 <p align="center">
-  <img title="Selenoid Video" src="media/screens/test_video.gif">
+  <img title="Selenoid Video" src="media/screens/Video.gif">
 </p>
 
