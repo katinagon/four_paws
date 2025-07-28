@@ -72,33 +72,33 @@
 
 ### *Локальный запуск:*
 ```
-gradle clean open_pages
+gradle clean test -Denv=local
 ```
 ### *Удалённый запуск через Jenkins:*
 ```
-clean
-${TASK}
--Dselenide.pageLoadStrategy=eager
-"-Dselenoid.url=${SELENOID_URL}"
--Dselenoid.login=${SELENOID_LOGIN}
--Dselenoid.password=${SELENOID_PASSWORD}
-"-Dbrowser=${BROWSER}"
+clean ${TASK} 
+"-Denv=remote"
+"-Dremote.url=${SELENOID_URL}" 
+"-Dremote.login=${SELENOID_LOGIN}" 
+"-Dremote.password=${SELENOID_PASSWORD}" 
+"-Dbrowser=${BROWSER}" 
 "-Dbrowser.version=${BROWSER_VERSION}"
 "-Dbrowser.size=${BROWSER_SIZE}"
 ```
 ### *Параметры сборки:*
 
-* <code>TASK</code> – задача для запуска
-* <code>BROWSER_VERSION</code> - браузер, в котором будут выполняться тесты. По-умолчанию - <code>chrome</code>.
-* <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты. По-умолчанию - <code>128.0</code>.
-* <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты. По-умолчанию - <code>1920x1080</code>.
+* <code>TASK</code> – задача для запуска.
+* <code>SELENOID_URL, SELENOID_LOGIN, SELENOID_PASSWORD</code> - необходимы для для удаленного запуска браузера.
+* <code>BROWSER</code> - браузер, в котором будут выполняться тесты.
+* <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты.
+* <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты.
 
-## <img src="media/icons/Jenkins.svg" title="Jenkins" width="4%"/> <a href="https://jenkins.autotests.cloud/job/035-katinagon-hw14/">Сборка в Jenkins</a>
+## <img src="media/icons/Jenkins.svg" title="Jenkins" width="4%"/> <a href="https://jenkins.autotests.cloud/job/035-katinagon-hw23/">Сборка в Jenkins</a>
 <p align="center">
 <img title="Jenkins Build" src="media/screens/Jenkins.png">
 </p>
 
-## <img src="media/icons/Allure_Report.svg" title="Allure Report" width="4%"/> <a href="https://jenkins.autotests.cloud/job/035-katinagon-hw14/25/allure/">Пример Allure-отчета</a>
+## <img src="media/icons/Allure_Report.svg" title="Allure Report" width="4%"/> <a href="https://jenkins.autotests.cloud/job/035-katinagon-hw23/22/allure/">Пример Allure-отчета</a>
 ### *Основная страница отчёта*
 
 <p align="center">
