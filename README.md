@@ -21,7 +21,7 @@
 ## :computer: Технологии и инструменты
 
 <p align="center">
-<a href="https://www.jetbrains.com/idea/"><img width="6%" title="IntelliJ IDEA" src="media/icons/Intelij_IDEA.svg"></a>
+<code><a href="https://www.jetbrains.com/idea/"><img width="6%" title="IntelliJ IDEA" src="media/icons/Intelij_IDEA.svg"></a></code>
 <a href="https://www.java.com/"><img width="6%" title="Java" src="media/icons/Java.svg"></a>
 <a href="https://gradle.org/"><img width="6%" title="Gradle" src="media/icons/Gradle.svg"></a>
 <a href="https://junit.org/junit5/"><img width="6%" title="JUnit5" src="media/icons/JUnit5.svg"></a>
