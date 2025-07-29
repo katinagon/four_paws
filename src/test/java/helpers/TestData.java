@@ -1,14 +1,14 @@
 package helpers;
 
 public class TestData {
-    public static String correctEmail = "katinagonch@yandex.ru",
+    public final static String correctEmail = "katinagonch@yandex.ru",
             incorrectEmail = "katinagonch@test.ru",
             correctPassword = "S9acMHvSBe",
             incorrectPassword = "1234",
             oneDigit = "9",
             nineDigit = "999999999",
-            emptyValue = "",
-            token,
+            emptyValue = "";
+    public static String token,
             customerId,
             customerCartId,
             offerId = "1042254",

@@ -7,6 +7,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import web.WebTestBase;
 import web.pages.MainPage;
 
@@ -83,7 +85,7 @@ public class AuthorizationTests extends WebTestBase {
     @Story("Неуспешная авторизация")
     @DisplayName("Неуспешная авторизация с пустым номером телефона")
     @Test
-    public void unsuccessAuthorizationWithEmptyPhoneNumberTest() {
+    public void unsuccessAuthorizationWithIncorrectPhoneNumberTest() {
         mainPage.openPage()
                 .openAuthorizationPopUp()
                 .setPhoneNumber(emptyValue)
@@ -93,22 +95,12 @@ public class AuthorizationTests extends WebTestBase {
     @Feature("Авторизация пользователя")
     @Story("Неуспешная авторизация")
     @DisplayName("Неуспешная авторизация с номером телефона из 1-ой добавленной цифры")
-    @Test
-    public void unsuccessAuthorizationByPhoneNumberWithOneDigitTest() {
+    @ParameterizedTest(name="Неуспешная авторизация с номером телефона \"{0}\"")
+    @CsvSource(value = {oneDigit, nineDigit})
+    public void unsuccessAuthorizationWithEmptyPhoneNumberTest(String phoneNumber) {
         mainPage.openPage()
                 .openAuthorizationPopUp()
-                .setPhoneNumber(oneDigit)
-                .checkErrorTextWhenIncorrectPhoneNumber();
-    }
-
-    @Feature("Авторизация пользователя")
-    @Story("Неуспешная авторизация")
-    @DisplayName("Неуспешная авторизация с номером телефона из 9-ти добавленных цифр")
-    @Test
-    public void unsuccessAuthorizationByPhoneNumberWithNineDigitsTest() {
-        mainPage.openPage()
-                .openAuthorizationPopUp()
-                .setPhoneNumber(nineDigit)
+                .setPhoneNumber(phoneNumber)
                 .checkErrorTextWhenIncorrectPhoneNumber();
     }
 }
