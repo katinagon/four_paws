@@ -8,9 +8,6 @@ import java.util.Map;
 import java.util.UUID;
 
 public class BaseConfig {
-    static String SELENOID_URL = System.getProperty("selenoid.url");
-    static String SELENOID_LOGIN = System.getProperty("selenoid.login");
-    static String SELENOID_PASSWORD = System.getProperty("selenoid.password");
     public static String baseURI = "https://4lapy.ru";
     public static String apiBaseURI = "https://api.4lapy.ru";
     public static String authEP = "/api/v1/users/customer/auth";
