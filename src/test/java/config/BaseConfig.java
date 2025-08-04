@@ -8,16 +8,6 @@ import java.util.Map;
 import java.util.UUID;
 
 public class BaseConfig {
-    /*
-    public static String baseURI = "https://4lapy.ru";
-    public static String apiBaseURI = "https://api.4lapy.ru";
-    public static String authEP = "/api/v1/users/customer/auth";
-    public static String currentUserEP = "/api/v1/users/current";
-    public static String customerCartIdEP = "/api/v1/cart/customerCartId?customerId=";
-    public static String cartEP = "/api/v1/cart/cart/";
-    public static String authByEmailEP = "/api/auth/authByEmail/";
-     */
-
     public static String baseURI = ApiProvider.getApiConfig().baseURI();;
     public static String apiBaseURI = ApiProvider.getApiConfig().apiBaseURI();
     public static String authEP =  ApiProvider.getApiConfig().authEP();
