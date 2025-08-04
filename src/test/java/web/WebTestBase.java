@@ -2,9 +2,7 @@ package web;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import config.BaseConfig;
-import config.WebConfig;
-import config.WebProvider;
+import config.*;
 import helpers.WebAttachUtils;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -15,6 +13,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class WebTestBase {
     public static final WebConfig webConfig = WebProvider.getWebConfig();
+    public static final ApiConfig apiConfig = ApiProvider.getApiConfig();
 
     @BeforeAll
     public static void setupBaseTestConfiguration() {
